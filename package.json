@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev": "npm run compile && npm run start",
+    "start": "node dist/index.js",
+    "compile": "tsc"
   },
   "author": "Thanakorn Pasangthien",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "url": "https://github.com/mingbackmountain/node-server-tutorial.git"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "@types/express": "^4.17.0",
+    "express": "^4.17.1",
+    "typescript": "^3.5.2"
   }
 }
